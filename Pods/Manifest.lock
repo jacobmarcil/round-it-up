@@ -1,0 +1,15 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
+  - CardIO (5.3.2)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (~> 2.2.0)
+  - CardIO
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  CardIO: 92c45caef0d986c4a303a7afba0c9b76ff2b1f6e
+
+PODFILE CHECKSUM: 0778612b3400ec410fa3ff34c1e83506455f049a
+
+COCOAPODS: 1.2.1

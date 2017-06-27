@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7019BAA0FD8BEE16A95B7C97 /* Pods_Micro_Investment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8B9BD20489615703ADF70 /* Pods_Micro_Investment.framework */; };
+		A5057A301EF0653100F8B8D3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */; };
+		A5057A321EF0653E00F8B8D3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */; };
+		A530B6251EF1BF2600FE0C35 /* CardScanningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */; };
+		A55DB45C1EF323FE007576F2 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */; };
+		A56E3BC51EF1A89C002E0D92 /* AddBankAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */; };
+		A58EFFDD1EF0216400A98460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFDC1EF0216400A98460 /* AppDelegate.swift */; };
+		A58EFFDF1EF0216400A98460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFDE1EF0216400A98460 /* ViewController.swift */; };
+		A58EFFE21EF0216400A98460 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58EFFE01EF0216400A98460 /* Main.storyboard */; };
+		A58EFFE41EF0216400A98460 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58EFFE31EF0216400A98460 /* Assets.xcassets */; };
+		A58EFFE71EF0216400A98460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */; };
+		A58EFFF11EF062CC00A98460 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFF01EF062CC00A98460 /* LogInVC.swift */; };
+		A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91C8B9BD20489615703ADF70 /* Pods_Micro_Investment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Micro_Investment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScanningVC.swift; sourceTree = "<group>"; };
+		A530B6271EF1C09700FE0C35 /* Micro-Investment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Micro-Investment-Bridging-Header.h"; sourceTree = "<group>"; };
+		A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBankAccountVC.swift; sourceTree = "<group>"; };
+		A58EFFD91EF0216400A98460 /* Micro-Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Micro-Investment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58EFFDC1EF0216400A98460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A58EFFDE1EF0216400A98460 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A58EFFE11EF0216400A98460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A58EFFE31EF0216400A98460 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A58EFFE61EF0216400A98460 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A58EFFE81EF0216400A98460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58EFFF01EF062CC00A98460 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
+		A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountVC.swift; sourceTree = "<group>"; };
+		C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.debug.xcconfig"; sourceTree = "<group>"; };
+		E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A58EFFD61EF0216400A98460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7019BAA0FD8BEE16A95B7C97 /* Pods_Micro_Investment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7D930C81F036D0736C8A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C8B9BD20489615703ADF70 /* Pods_Micro_Investment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A58EFFD01EF0216400A98460 = {
+			isa = PBXGroup;
+			children = (
+				A58EFFDB1EF0216400A98460 /* Micro-Investment */,
+				A58EFFDA1EF0216400A98460 /* Products */,
+				E4F6184CDDA34A75C1830611 /* Pods */,
+				0F7D930C81F036D0736C8A42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A58EFFDA1EF0216400A98460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A58EFFD91EF0216400A98460 /* Micro-Investment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A58EFFDB1EF0216400A98460 /* Micro-Investment */ = {
+			isa = PBXGroup;
+			children = (
+				A58EFFDC1EF0216400A98460 /* AppDelegate.swift */,
+				A58EFFDE1EF0216400A98460 /* ViewController.swift */,
+				A58EFFE01EF0216400A98460 /* Main.storyboard */,
+				A58EFFE31EF0216400A98460 /* Assets.xcassets */,
+				A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */,
+				A58EFFE81EF0216400A98460 /* Info.plist */,
+				A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */,
+				A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */,
+				A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */,
+				A58EFFF01EF062CC00A98460 /* LogInVC.swift */,
+				A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */,
+				A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */,
+				A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */,
+				A530B6271EF1C09700FE0C35 /* Micro-Investment-Bridging-Header.h */,
+			);
+			path = "Micro-Investment";
+			sourceTree = "<group>";
+		};
+		E4F6184CDDA34A75C1830611 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */,
+				E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A58EFFD81EF0216400A98460 /* Micro-Investment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A58EFFEB1EF0216400A98460 /* Build configuration list for PBXNativeTarget "Micro-Investment" */;
+			buildPhases = (
+				E4D828A8F75ECB45C8B778CC /* [CP] Check Pods Manifest.lock */,
+				A58EFFD51EF0216400A98460 /* Sources */,
+				A58EFFD61EF0216400A98460 /* Frameworks */,
+				A58EFFD71EF0216400A98460 /* Resources */,
+				46A1F2BD6630BB76F2529A3F /* [CP] Embed Pods Frameworks */,
+				F4890C5FE807D04F33A27BBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Micro-Investment";
+			productName = "Micro-Investment";
+			productReference = A58EFFD91EF0216400A98460 /* Micro-Investment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A58EFFD11EF0216400A98460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ETS;
+				TargetAttributes = {
+					A58EFFD81EF0216400A98460 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = JJ574S9SWS;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A58EFFD41EF0216400A98460 /* Build configuration list for PBXProject "Micro-Investment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A58EFFD01EF0216400A98460;
+			productRefGroup = A58EFFDA1EF0216400A98460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A58EFFD81EF0216400A98460 /* Micro-Investment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A58EFFD71EF0216400A98460 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A58EFFE71EF0216400A98460 /* LaunchScreen.storyboard in Resources */,
+				A58EFFE41EF0216400A98460 /* Assets.xcassets in Resources */,
+				A58EFFE21EF0216400A98460 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46A1F2BD6630BB76F2529A3F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4D828A8F75ECB45C8B778CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4890C5FE807D04F33A27BBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A58EFFD51EF0216400A98460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5057A321EF0653E00F8B8D3 /* HomePageVC.swift in Sources */,
+				A5057A301EF0653100F8B8D3 /* SignUpVC.swift in Sources */,
+				A55DB45C1EF323FE007576F2 /* CheckboxButton.swift in Sources */,
+				A58EFFDF1EF0216400A98460 /* ViewController.swift in Sources */,
+				A58EFFDD1EF0216400A98460 /* AppDelegate.swift in Sources */,
+				A56E3BC51EF1A89C002E0D92 /* AddBankAccountVC.swift in Sources */,
+				A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */,
+				A58EFFF11EF062CC00A98460 /* LogInVC.swift in Sources */,
+				A530B6251EF1BF2600FE0C35 /* CardScanningVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A58EFFE01EF0216400A98460 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A58EFFE11EF0216400A98460 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A58EFFE61EF0216400A98460 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A58EFFE91EF0216400A98460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A58EFFEA1EF0216400A98460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A58EFFEC1EF0216400A98460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JJ574S9SWS;
+				INFOPLIST_FILE = "Micro-Investment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ETS.Round-It-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A58EFFED1EF0216400A98460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JJ574S9SWS;
+				INFOPLIST_FILE = "Micro-Investment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ETS.Round-It-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A58EFFD41EF0216400A98460 /* Build configuration list for PBXProject "Micro-Investment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58EFFE91EF0216400A98460 /* Debug */,
+				A58EFFEA1EF0216400A98460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A58EFFEB1EF0216400A98460 /* Build configuration list for PBXNativeTarget "Micro-Investment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A58EFFEC1EF0216400A98460 /* Debug */,
+				A58EFFED1EF0216400A98460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A58EFFD11EF0216400A98460 /* Project object */;
+}
