@@ -139,6 +139,35 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             "privilege": "Banque Nationale"
             
         ]
+        /*
+        let troisiemecarte = [
+            "numero" : "4510 8475 8826 9987" as String,
+            "dateExp": "05/23" as String,
+            "cvv" : "172" as String,
+            "type" : "Carte de débit",
+            "compagnie": "Banque de Montréal",
+            "privilege": "BMO"
+            
+        ]
+        let quatriemecarte = [
+            "numero" : "4543 7466 8374 6374" as String,
+            "dateExp": "03/18" as String,
+            "cvv" : "986" as String,
+            "type" : "Carte de débit",
+            "compagnie": "Scotiabank",
+            "privilege": "Scotiabank"
+            
+        ]
+         let cinquiemecarte = [
+         "numero" : "4543 7466 8374 6374" as String,
+         "dateExp": "03/18" as String,
+         "cvv" : "986" as String,
+         "type" : "Carte de crédit",
+         "compagnie": "TD Canada Trust",
+         "privilege": "TD"
+         
+         ]
+ */
         
         refBanque.child(uid!).child("0").setValue(unecarte)
         refBanque.child(uid!).child("1").setValue(deuxiemecarte)
