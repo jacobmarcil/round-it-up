@@ -8,5 +8,8 @@ target 'Micro-Investment' do
   # Pods for Micro-Investment
   pod 'CardIO’
   pod 'ActionSheetPicker-3.0', '~> 2.2.0'
-
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
 end

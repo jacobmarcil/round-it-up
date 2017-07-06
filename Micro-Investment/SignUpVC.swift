@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
 
 class SignUpVC: UIViewController, UITextFieldDelegate {
     
@@ -17,10 +20,13 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nextStepBtn: UIButton!
     @IBOutlet weak var dateTextField: UITextField!
+    var refUsers: DatabaseReference!
+    var refBanque: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        refUsers = Database.database().reference().child("users");
+        refBanque = Database.database().reference().child("banque");
         nextStepBtn.layer.cornerRadius = 5
         nextStepBtn.layer.borderWidth = 1
         nextStepBtn.layer.borderColor = UIColor.white.cgColor
@@ -35,6 +41,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.lastNameTB.delegate = self;
         self.emailTB.delegate = self;
         self.passwordTB.delegate = self;
+        
+
+        
+        
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -45,6 +55,95 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
+    
+    @IBAction func createAccountAction(_ sender: Any) {
+
+        
+        if emailTB.text == "" {
+            let alertController = UIAlertController(title: "Error", message: "Please enter your email and password", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            
+        } else if (firstNameTB.text == "" || lastNameTB.text == "" || dateTextField.text == "" ){
+            let alertController = UIAlertController(title: "Error", message: "Please enter your profile informations", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+        }else {
+            Auth.auth().createUser(withEmail: emailTB.text!, password: passwordTB.text!) { (user, error) in
+                
+                if error == nil {
+                    print("You have successfully signed up")
+                    //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
+                    
+                    let vc = self.storyboard?.instantiateViewController(withIdentifier: "bankAccount")
+                    self.present(vc!, animated: true, completion: nil)
+                    self.addUsersInfo()
+                    
+                } else {
+                    
+                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                }
+                
+            }
+        }
+       
+    }
+    
+    func addUsersInfo(){
+
+        let uid = Auth.auth().currentUser?.uid
+        //creating artist with the given values
+        let users = [
+                      "prenom": firstNameTB.text! as String,
+                      "nom": lastNameTB.text! as String,
+                      "datedenaissance": dateTextField.text! as String,
+                      "email":emailTB.text! as String,
+                      "password":passwordTB.text! as String
+        ]
+         refUsers.child(uid!).setValue(users)
+
+        //Decocher pour ajouter des cartes au compte de la banque + modifier les numero dans la function
+        addUsersInfoBanqueTest()
+    }
+
+    func addUsersInfoBanqueTest(){
+        let uid = Auth.auth().currentUser?.uid
+        
+        let unecarte = [
+            "numero" : "4540 1100 3984 9285" as String,
+            "dateExp": "12/19" as String,
+            "cvv" : "746" as String,
+            "type" : "Carte de crédit",
+            "compagnie": "Desjardins",
+            "privilege": "Visa Or"
+        ]
+        
+        
+        let deuxiemecarte = [
+            "numero" : "4510 3342 6274 7356" as String,
+            "dateExp": "02/21" as String,
+            "cvv" : "536" as String,
+            "type" : "Carte de débit",
+            "compagnie": "Banque Nationale",
+            "privilege": "Banque Nationale"
+            
+        ]
+        
+        refBanque.child(uid!).child("0").setValue(unecarte)
+        refBanque.child(uid!).child("1").setValue(deuxiemecarte)
+    }
+    
     @IBAction func test(_ sender: UITextField) {
         let datePickerView: UIDatePicker = UIDatePicker()
         
