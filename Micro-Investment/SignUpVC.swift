@@ -120,7 +120,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     func addUsersInfoBanqueTest(){
         let uid = Auth.auth().currentUser?.uid
         
-        let unecarte = [
+        let carte1 = [
             "numero" : "4540 1100 3984 9285" as String,
             "dateExp": "12/19" as String,
             "cvv" : "746" as String,
@@ -130,7 +130,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         ]
         
         
-        let deuxiemecarte = [
+        let carte2 = [
             "numero" : "4510 3342 6274 7356" as String,
             "dateExp": "02/21" as String,
             "cvv" : "536" as String,
@@ -140,7 +140,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             
         ]
         /*
-        let troisiemecarte = [
+        let carte3 = [
             "numero" : "4510 8475 8826 9987" as String,
             "dateExp": "05/23" as String,
             "cvv" : "172" as String,
@@ -149,7 +149,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             "privilege": "BMO"
             
         ]
-        let quatriemecarte = [
+        let carte3 = [
             "numero" : "4543 7466 8374 6374" as String,
             "dateExp": "03/18" as String,
             "cvv" : "986" as String,
@@ -158,7 +158,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             "privilege": "Scotiabank"
             
         ]
-         let cinquiemecarte = [
+         let carte5 = [
          "numero" : "4543 7466 8374 6374" as String,
          "dateExp": "03/18" as String,
          "cvv" : "986" as String,
@@ -169,8 +169,14 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
          ]
  */
         
-        refBanque.child(uid!).child("0").setValue(unecarte)
-        refBanque.child(uid!).child("1").setValue(deuxiemecarte)
+        refBanque.child(uid!).child("0").setValue(carte1)
+        refBanque.child(uid!).child("1").setValue(carte2)
+        
+        /*
+        refBanque.child(uid!).child("0").setValue(carte3)
+        refBanque.child(uid!).child("1").setValue(carte4)
+        refBanque.child(uid!).child("0").setValue(carte5)
+         */
     }
     
     @IBAction func test(_ sender: UITextField) {
