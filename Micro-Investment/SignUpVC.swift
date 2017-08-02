@@ -143,39 +143,33 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             "privilege": "Banque Nationale"
             
         ]
-        /*
-        let troisiemecarte = [
-            "numero" : "4510 8475 8826 9987" as String,
-            "dateExp": "05/23" as String,
-            "cvv" : "172" as String,
-            "type" : "Carte de débit",
-            "compagnie": "Banque de Montréal",
-            "privilege": "BMO"
-            
-        ]
-        let quatriemecarte = [
-            "numero" : "4543 7466 8374 6374" as String,
-            "dateExp": "03/18" as String,
-            "cvv" : "986" as String,
-            "type" : "Carte de débit",
-            "compagnie": "Scotiabank",
-            "privilege": "Scotiabank"
-            
-        ]
-         let cinquiemecarte = [
-         "numero" : "4543 7466 8374 6374" as String,
-         "dateExp": "03/18" as String,
-         "cvv" : "986" as String,
-         "type" : "Carte de crédit",
-         "compagnie": "TD Canada Trust",
-         "privilege": "TD"
-         
-         ]
- */
         
+ 
         refBanque.child(uid!).child("0").setValue(unecarte)
         refBanque.child(uid!).child("1").setValue(deuxiemecarte)
+        for i in 0 ..< 10 {
+            
+            refBanque.child(uid!).child("1").child("transactions").child(String(i)).setValue(newTransaction())
+            
+        }
+
     }
+    
+    func newTransaction() -> [String: String]{
+        let montant = Double(arc4random_uniform(30001))/100.0
+        let dateJour = Int(arc4random_uniform(30))
+        let dateMois = Int(arc4random_uniform(12))
+        let dateAnnee = 2017
+        let date = String(dateJour) + "-" + String(dateMois) + "-" + String(dateAnnee)
+        let transactionUn = [
+            "date": date,
+            "description": "Café Oui Mais Non",
+            "montant": String(montant)
+        ]
+        return transactionUn
+    
+    }
+    
     
     @IBAction func test(_ sender: UITextField) {
         let datePickerView: UIDatePicker = UIDatePicker()
@@ -197,6 +191,22 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         
         dateTextField.text = dateFormatter.string(from: sender.date)
         
+    }
+    
+    func generateRandomDate(daysBack: Int)-> Date?{
+        let day = arc4random_uniform(UInt32(daysBack))+1
+        let hour = arc4random_uniform(23)
+        let minute = arc4random_uniform(59)
+        
+        let today = Date(timeIntervalSinceNow: 0)
+        let gregorian  = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
+        var offsetComponents = DateComponents()
+        offsetComponents.day = Int(day - 1)
+        offsetComponents.hour = Int(hour)
+        offsetComponents.minute = Int(minute)
+        
+        let randomDate = gregorian?.date(byAdding: offsetComponents, to: today, options: .init(rawValue: 0) )
+        return randomDate
     }
     
 
