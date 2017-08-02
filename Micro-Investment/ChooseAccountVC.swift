@@ -11,18 +11,13 @@ import FirebaseDatabase
 import Firebase
 import FirebaseAuth
 
-class ChooseAccountVC: UIViewController {
+class ChooseAccountVC: UIViewController, CardIOPaymentViewControllerDelegate {
 
     var ref:DatabaseReference!
     @IBOutlet weak var btnDebit: UIButton!
-    @IBOutlet weak var btnCredit: UIButton!
-    @IBOutlet weak var carteUn: UILabel!
-    @IBOutlet weak var carteDeux: UILabel!
     
-    @IBOutlet weak var privilege: UILabel!
-    @IBOutlet weak var typeUn: UILabel!
-    @IBOutlet weak var privilegeUn: UILabel!
-    @IBOutlet weak var type: UILabel!
+    @IBOutlet weak var cardTyp: UILabel!
+    @IBOutlet weak var cardNumber: UILabel!
     
     static func prepareController(originController: UIViewController) -> ChooseAccountVC? {
     
@@ -41,37 +36,64 @@ class ChooseAccountVC: UIViewController {
         btnDebit.layer.borderWidth = 1
         btnDebit.layer.borderColor = UIColor.white.cgColor
         
-        btnCredit.layer.cornerRadius = 5
-        btnCredit.layer.borderWidth = 1
-        btnCredit.layer.borderColor = UIColor.white.cgColor
+        self.navigationController?.navigationBar.isHidden = false
+        CardIOUtilities.preload()
+        startScan()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        var count = 0;
-        let userID = Auth.auth().currentUser?.uid
-        ref.child("banque").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            
-            if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
-                
-                for snap in snapshots
-                {
-                    if(count==0){
-                        self.carteUn.text = snap.childSnapshot(forPath: "numero").value! as! String
-                        self.typeUn.text = snap.childSnapshot(forPath: "type").value! as! String
-                        self.privilegeUn.text = snap.childSnapshot(forPath: "privilege").value! as! String
-                        count = count + 1
-                    }
-                    if(count==1){
-                        self.carteDeux.text = snap.childSnapshot(forPath: "numero").value! as! String
-                        self.type.text = snap.childSnapshot(forPath: "type").value! as! String
-                        self.privilege.text = snap.childSnapshot(forPath: "privilege").value! as! String
-                    }
-                }
-                count = 0;
-            }
-            
-        }) { (error) in
-            print(error.localizedDescription)
+//        var count = 0;
+//        let userID = Auth.auth().currentUser?.uid
+//        ref.child("banque").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+//            
+//            if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
+//                
+//                for snap in snapshots
+//                {
+//                    if(count==0){
+//                        self.carteUn.text = snap.childSnapshot(forPath: "numero").value! as! String
+//                        self.typeUn.text = snap.childSnapshot(forPath: "type").value! as! String
+//                        self.privilegeUn.text = snap.childSnapshot(forPath: "privilege").value! as! String
+//                        count = count + 1
+//                    }
+//                    if(count==1){
+//                        self.carteDeux.text = snap.childSnapshot(forPath: "numero").value! as! String
+//                        self.type.text = snap.childSnapshot(forPath: "type").value! as! String
+//                        self.privilege.text = snap.childSnapshot(forPath: "privilege").value! as! String
+//                    }
+//                }
+//                count = 0;
+//            }
+//            
+//        }) { (error) in
+//            print(error.localizedDescription)
+//        }
+        
+    }
+    
+    func startScan(){
+        if(CardIOUtilities.canReadCardWithCamera()){
+            let scanVC: CardIOPaymentViewController = CardIOPaymentViewController.init(paymentDelegate: self)
+            present(scanVC, animated: true, completion: nil)
         }
+    }
+    
+    func userDidCancel(_ paymentViewController: CardIOPaymentViewController!) {
+        paymentViewController.dismiss(animated: true, completion: nil)
+    }
+    
+    func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!) {
+        
+        if let info = cardInfo {
+            
+            self.cardNumber.text = info.cardNumber
+            
+            if info.cardType.rawValue == 53{
+                self.cardTyp.text = "mastercard"
+            }
+        }
+        
+        paymentViewController?.dismiss(animated: true, completion: nil)
+        
     }
 }

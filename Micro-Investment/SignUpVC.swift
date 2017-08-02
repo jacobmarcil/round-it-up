@@ -25,6 +25,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.isHidden = false
         refUsers = Database.database().reference().child("users");
         refBanque = Database.database().reference().child("banque");
         nextStepBtn.layer.cornerRadius = 5
@@ -42,7 +43,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.emailTB.delegate = self;
         self.passwordTB.delegate = self;
         
-
+        navigationItem.title = "Round It Up!"
+        
+        navigationController?.navigationBar.barTintColor = view.backgroundColor
+        navigationController?.navigationBar.tintColor = UIColor.white
         
         
     }

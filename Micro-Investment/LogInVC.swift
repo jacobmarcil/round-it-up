@@ -20,6 +20,9 @@ class LogInVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.isHidden = true
+        
         LogInBtn.layer.cornerRadius = 5
         LogInBtn.layer.borderWidth = 1
         LogInBtn.layer.borderColor = UIColor.white.cgColor

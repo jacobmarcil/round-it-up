@@ -26,8 +26,6 @@ class CardScanningVC: UIViewController, CardIOPaymentViewControllerDelegate {
             let scanVC: CardIOPaymentViewController = CardIOPaymentViewController.init(paymentDelegate: self)
             present(scanVC, animated: true, completion: nil)
         }
-        print("start scan")
-
     }
     
     func userDidCancel(_ paymentViewController: CardIOPaymentViewController!) {
@@ -37,9 +35,8 @@ class CardScanningVC: UIViewController, CardIOPaymentViewControllerDelegate {
     func userDidProvide(_ cardInfo: CardIOCreditCardInfo!, in paymentViewController: CardIOPaymentViewController!) {
         
         if let info = cardInfo {
-            print(info.cardholderName)
-            print(info.cardNumber)
-            //let str = NSString(format: "Received card info.\n Number: %@\n expiry: %02lu/%lu\n cvv: %@.", info.redactedCardNumber, info.expiryMonth, info.expiryYear, info.cvv)
+
+            let str = NSString(format: "Received card info.\n Number: %@\n expiry: %02lu/%lu\n cvv: %@.", info.redactedCardNumber, info.expiryMonth, info.expiryYear, info.cvv)
             //resultLabel.text = str as String
         }
         
