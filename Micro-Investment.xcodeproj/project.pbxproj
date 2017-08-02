@@ -161,7 +161,7 @@
 				TargetAttributes = {
 					A58EFFD81EF0216400A98460 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = LQ9MWQYY73;
+						DevelopmentTeam = FK57D9LEBC;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -387,10 +387,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = LQ9MWQYY73;
+				DEVELOPMENT_TEAM = FK57D9LEBC;
 				INFOPLIST_FILE = "Micro-Investment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasda;
+				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasdadsd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -404,10 +404,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = LQ9MWQYY73;
+				DEVELOPMENT_TEAM = FK57D9LEBC;
 				INFOPLIST_FILE = "Micro-Investment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasda;
+				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasdadsd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

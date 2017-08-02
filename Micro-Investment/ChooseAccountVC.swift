@@ -86,11 +86,14 @@ class ChooseAccountVC: UIViewController, CardIOPaymentViewControllerDelegate {
         
         if let info = cardInfo {
             
-            self.cardNumber.text = info.cardNumber
+            self.cardNumber.text = info.redactedCardNumber
             
-            if info.cardType.rawValue == 53{
-                self.cardTyp.text = "mastercard"
+            if info.cardType.hashValue == 5{
+                self.cardTyp.text = "Mastercard"
+            } else if info.cardType.hashValue ==  4{
+                 self.cardTyp.text = "Visa"
             }
+
         }
         
         paymentViewController?.dismiss(animated: true, completion: nil)
