@@ -147,7 +147,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
  
         refBanque.child(uid!).child("0").setValue(unecarte)
         refBanque.child(uid!).child("1").setValue(deuxiemecarte)
-        for i in 0 ..< 10 {
+        for i in 0 ..< 100 {
             
             refBanque.child(uid!).child("1").child("transactions").child(String(i)).setValue(newTransaction())
             
@@ -156,9 +156,17 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     }
     
     func newTransaction() -> [String: String]{
+        
         let montant = Double(arc4random_uniform(30001))/100.0
-        let dateJour = Int(arc4random_uniform(30))
-        let dateMois = Int(arc4random_uniform(12))
+        var dateJour = Int(arc4random_uniform(30))
+        var dateMois = Int(arc4random_uniform(12))
+        
+        if (dateJour == 0) {
+            dateJour = 1
+        }
+        if (dateMois == 0) {
+            dateMois = 1
+        }
         let dateAnnee = 2017
         let date = String(dateJour) + "-" + String(dateMois) + "-" + String(dateAnnee)
         let transactionUn = [
