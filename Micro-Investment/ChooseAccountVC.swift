@@ -24,6 +24,16 @@ class ChooseAccountVC: UIViewController {
     @IBOutlet weak var privilegeUn: UILabel!
     @IBOutlet weak var type: UILabel!
     
+    static func prepareController(originController: UIViewController) -> ChooseAccountVC? {
+    
+        if let chooseAccountVC = originController.storyboard?.instantiateViewController(withIdentifier: "ChooseAccountVC") as? ChooseAccountVC{
+            return chooseAccountVC
+        }
+        else{
+            return nil
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
@@ -35,13 +45,11 @@ class ChooseAccountVC: UIViewController {
         btnCredit.layer.borderWidth = 1
         btnCredit.layer.borderColor = UIColor.white.cgColor
     }
-
     
     override func viewWillAppear(_ animated: Bool) {
         var count = 0;
         let userID = Auth.auth().currentUser?.uid
         ref.child("banque").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
-            
             
             if let snapshots = snapshot.children.allObjects as? [DataSnapshot] {
                 
@@ -61,8 +69,6 @@ class ChooseAccountVC: UIViewController {
                 }
                 count = 0;
             }
-            
-
             
         }) { (error) in
             print(error.localizedDescription)

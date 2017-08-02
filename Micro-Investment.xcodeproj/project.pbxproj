@@ -23,6 +23,7 @@
 		A58EFFE71EF0216400A98460 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */; };
 		A58EFFF11EF062CC00A98460 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFF01EF062CC00A98460 /* LogInVC.swift */; };
 		A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */; };
+		A5C159E31F3173680086B342 /* HabitudeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C159E21F3173680086B342 /* HabitudeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		A58EFFE81EF0216400A98460 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A58EFFF01EF062CC00A98460 /* LogInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountVC.swift; sourceTree = "<group>"; };
+		A5C159E21F3173680086B342 /* HabitudeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitudeVC.swift; sourceTree = "<group>"; };
 		C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.debug.xcconfig"; sourceTree = "<group>"; };
 		E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +109,7 @@
 				16021E971F0327610016DACB /* GoogleService-Info.plist */,
 				162F9D161F0C68BB00C430B3 /* User.swift */,
 				162F9D181F0C87BE00C430B3 /* AuthService.swift */,
+				A5C159E21F3173680086B342 /* HabitudeVC.swift */,
 			);
 			path = "Micro-Investment";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */,
 				A58EFFF11EF062CC00A98460 /* LogInVC.swift in Sources */,
 				162F9D171F0C68BB00C430B3 /* User.swift in Sources */,
+				A5C159E31F3173680086B342 /* HabitudeVC.swift in Sources */,
 				A530B6251EF1BF2600FE0C35 /* CardScanningVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

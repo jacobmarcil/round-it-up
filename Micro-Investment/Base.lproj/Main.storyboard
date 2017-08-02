@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QUY-Gn-Mft">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -503,6 +503,126 @@
             </objects>
             <point key="canvasLocation" x="1412" y="59"/>
         </scene>
+        <!--HabitudeVC-->
+        <scene sceneID="i1k-sL-vOP">
+            <objects>
+                <viewController id="irm-oi-6pU" customClass="HabitudeVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iNE-dq-Kx8"/>
+                        <viewControllerLayoutGuide type="bottom" id="UC6-2m-lQ1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4K9-CK-oat">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Désirez-vous changer des habitudes de vies quotidienne suivante?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-Eg-esV">
+                                <rect key="frame" x="16" y="42" width="343" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrêter de fumer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHu-VT-df3">
+                                <rect key="frame" x="31" y="210" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-pp-quk">
+                                <rect key="frame" x="30" y="208" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="smokeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="f9E-TO-oKh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-smoking-icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="91K-IJ-vvK">
+                                <rect key="frame" x="41" y="210" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins de café" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG6-hh-vQF">
+                                <rect key="frame" x="202" y="210" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syK-NU-Z2e">
+                                <rect key="frame" x="202" y="208" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="coffeeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="rhN-rl-2mA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee-Cup-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Axg-j5-DjA">
+                                <rect key="frame" x="237" y="234" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ1-CM-Ej1">
+                                <rect key="frame" x="32" y="339" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-I4-Oi1">
+                                <rect key="frame" x="31" y="337" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="foodChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="kDA-Fn-jem"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastFoodWhite" translatesAutoresizingMaskIntoConstraints="NO" id="lrK-ng-4x7">
+                                <rect key="frame" x="65" y="363" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins d'alcool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-In-Ic1">
+                                <rect key="frame" x="203" y="339" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-AZ-2Hl">
+                                <rect key="frame" x="203" y="337" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="alcoolChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="K4a-fc-Dlj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alcoolWhite-1" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-Ht-Zf6">
+                                <rect key="frame" x="238" y="363" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-ql-DGt">
+                                <rect key="frame" x="16" y="578" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Prochaine étape">
+                                    <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="IaV-gF-Xxg" kind="show" id="CGX-jQ-AEv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="alcoolBtn" destination="Sf7-AZ-2Hl" id="tw5-w5-oDf"/>
+                        <outlet property="alcoolLbl" destination="uYJ-In-Ic1" id="zj2-1M-foR"/>
+                        <outlet property="coffeeBtn" destination="syK-NU-Z2e" id="Ucf-ya-fb5"/>
+                        <outlet property="coffeeLbl" destination="CG6-hh-vQF" id="0TW-Vb-gOy"/>
+                        <outlet property="foodBtn" destination="fpL-I4-Oi1" id="Nfk-2G-Bjg"/>
+                        <outlet property="foodLbl" destination="NJ1-CM-Ej1" id="QNo-f2-2tS"/>
+                        <outlet property="smokeBtn" destination="Bvl-pp-quk" id="Fk4-i8-9r0"/>
+                        <outlet property="smokeLbl" destination="BHu-VT-df3" id="RPQ-dz-hRX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kDh-He-bQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3901.5999999999999" y="58.920539730134934"/>
+        </scene>
         <!--Card ScanningVC-->
         <scene sceneID="UjI-OS-j1W">
             <objects>
@@ -515,10 +635,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6T-wc-id5" customClass="CardIOView">
-                                <rect key="frame" x="0.0" y="228" width="375" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6T-wc-id5" customClass="CardIOView">
+                                <rect key="frame" x="0.0" y="176" width="375" height="380"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="rTS-qo-WSL"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veuillez scanner votre carte de débit afin que l'on puisse connecter votre compte bancaire." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRb-6x-kMe">
                                 <rect key="frame" x="16" y="28" width="343" height="149"/>
@@ -527,8 +648,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMM-ZL-qWp">
+                                <rect key="frame" x="19" y="628" width="337" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="kMo-iO-obG" kind="show" identifier="showAccount" id="LDY-5A-ZoS"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="War-ri-IaK">
-                                <rect key="frame" x="16" y="458" width="343" height="43"/>
+                                <rect key="frame" x="16" y="564" width="343" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
                                 <state key="normal" title="Entrer manuellement le numéro de carte">
@@ -538,16 +666,17 @@
                                     <segue destination="7Vb-fO-sNF" kind="show" id="e1I-ph-oiy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMM-ZL-qWp">
-                                <rect key="frame" x="19" y="519" width="337" height="117"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="kMo-iO-obG" kind="show" id="LDY-5A-ZoS"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e6T-wc-id5" firstAttribute="centerX" secondItem="2js-hv-zVj" secondAttribute="centerX" id="0MP-9h-MST"/>
+                            <constraint firstItem="e6T-wc-id5" firstAttribute="top" secondItem="IEH-en-W4X" secondAttribute="bottom" constant="156" id="Z4T-7A-eUm"/>
+                            <constraint firstItem="e6T-wc-id5" firstAttribute="centerY" secondItem="2js-hv-zVj" secondAttribute="centerY" constant="32.5" id="bqn-U9-sUV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardIOView" destination="e6T-wc-id5" id="X0a-uk-RCe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIY-r6-1ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -556,7 +685,7 @@
         <!--Choose AccountVC-->
         <scene sceneID="CBT-FM-j1E">
             <objects>
-                <viewController id="kMo-iO-obG" customClass="ChooseAccountVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="ChooseAccountVC" storyboardIdentifier="ChooseAccountVC" id="kMo-iO-obG" customClass="ChooseAccountVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gaP-tw-c4e"/>
                         <viewControllerLayoutGuide type="bottom" id="rP0-yC-2Lz"/>
@@ -640,7 +769,7 @@
                                     <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5Im-Yx-lPg" kind="show" id="ki5-6I-gTR"/>
+                                    <segue destination="irm-oi-6pU" kind="show" id="u73-lq-xlH"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000 0000 0000 0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJF-wH-hMb">
@@ -687,7 +816,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOR-gr-wuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661.5999999999999" y="-7.6461769115442282"/>
+            <point key="canvasLocation" x="3126" y="59"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P14-27-xun">
@@ -798,15 +927,54 @@
             </objects>
             <point key="canvasLocation" x="428" y="-706.59670164917543"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xde-Vz-kvB">
+            <objects>
+                <viewController id="IaV-gF-Xxg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tCt-vj-EIS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yl5-VM-7P9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oLx-NO-nml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBa-C0-KdS">
+                                <rect key="frame" x="16" y="585" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Configurer le compte">
+                                    <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veuillez choisir un portfolio d'investissement." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6x-c8-sL2">
+                                <rect key="frame" x="16" y="41" width="343" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBQ-IJ-ArY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4658" y="59"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Coffee-Cup-icon" width="500" height="500"/>
         <image name="Logo (5)" width="640" height="640"/>
         <image name="Scotiabank-Logo-PNG-03791-2" width="625" height="627"/>
         <image name="TD-Bank-Group-1" width="500" height="300"/>
+        <image name="alcoolWhite-1" width="512" height="512"/>
         <image name="desjardins-1" width="61" height="61"/>
+        <image name="fastFoodWhite" width="200" height="200"/>
         <image name="linkiconbmo" width="285" height="209"/>
+        <image name="no-smoking-icon-1" width="884" height="883"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Tk-BU-eiJ"/>
+        <segue reference="CDZ-ec-GXS"/>
     </inferredMetricsTieBreakers>
 </document>
