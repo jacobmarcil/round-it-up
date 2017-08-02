@@ -620,71 +620,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDh-He-bQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3901.5999999999999" y="58.920539730134934"/>
-        </scene>
-        <!--Card ScanningVC-->
-        <scene sceneID="UjI-OS-j1W">
-            <objects>
-                <viewController id="QUY-Gn-Mft" customClass="CardScanningVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IEH-en-W4X"/>
-                        <viewControllerLayoutGuide type="bottom" id="4f3-1Q-gVV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2js-hv-zVj">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6T-wc-id5" customClass="CardIOView">
-                                <rect key="frame" x="0.0" y="209" width="375" height="347"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="375" id="rTS-qo-WSL"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vMM-ZL-qWp">
-                                <rect key="frame" x="19" y="628" width="337" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="kMo-iO-obG" kind="show" identifier="showAccount" id="LDY-5A-ZoS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="War-ri-IaK">
-                                <rect key="frame" x="16" y="564" width="343" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <state key="normal" title="Entrer manuellement le numéro de carte">
-                                    <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="7Vb-fO-sNF" kind="show" id="e1I-ph-oiy"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veuillez scanner votre carte de débit afin que l'on puisse connecter votre compte bancaire." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PRb-6x-kMe">
-                                <rect key="frame" x="16" y="62" width="343" height="149"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="149" id="b2d-15-wBP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="e6T-wc-id5" firstAttribute="centerX" secondItem="2js-hv-zVj" secondAttribute="centerX" id="0MP-9h-MST"/>
-                            <constraint firstItem="PRb-6x-kMe" firstAttribute="leading" secondItem="2js-hv-zVj" secondAttribute="leadingMargin" id="UNV-4u-MwE"/>
-                            <constraint firstItem="e6T-wc-id5" firstAttribute="top" secondItem="IEH-en-W4X" secondAttribute="bottom" constant="189" id="Z4T-7A-eUm"/>
-                            <constraint firstItem="e6T-wc-id5" firstAttribute="centerY" secondItem="2js-hv-zVj" secondAttribute="centerY" constant="49" id="bqn-U9-sUV"/>
-                            <constraint firstItem="PRb-6x-kMe" firstAttribute="trailing" secondItem="2js-hv-zVj" secondAttribute="trailingMargin" id="mZC-yG-N8j"/>
-                            <constraint firstItem="PRb-6x-kMe" firstAttribute="top" secondItem="IEH-en-W4X" secondAttribute="bottom" constant="42" id="rAZ-5y-wUZ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="cardIOView" destination="e6T-wc-id5" id="X0a-uk-RCe"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zIY-r6-1ja" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2286" y="-519"/>
+            <point key="canvasLocation" x="2857" y="79"/>
         </scene>
         <!--Choose AccountVC-->
         <scene sceneID="CBT-FM-j1E">
@@ -775,62 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOR-gr-wuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3202" y="40"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="P14-27-xun">
-            <objects>
-                <viewController id="7Vb-fO-sNF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Az4-wc-S9c"/>
-                        <viewControllerLayoutGuide type="bottom" id="1xK-yB-olJ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="O1d-xI-3Kz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date d'expiration" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JDH-1f-2Qq">
-                                <rect key="frame" x="34" y="339" width="308" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OkE-ZA-rIp">
-                                <rect key="frame" x="34" y="420" width="308" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numéro de carte" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pcf-lN-9qG">
-                                <rect key="frame" x="33" y="264" width="308" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCB-cw-54e">
-                                <rect key="frame" x="49" y="78" width="293" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCn-Ji-iFv">
-                                <rect key="frame" x="49" y="130" width="293" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uxw-v5-JH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2936.8000000000002" y="864.91754122938539"/>
+            <point key="canvasLocation" x="2156" y="59"/>
         </scene>
         <!--Home PageVC-->
         <scene sceneID="2dz-RR-xHK">
@@ -1068,7 +949,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4656.8000000000002" y="58.920539730134934"/>
+            <point key="canvasLocation" x="3612" y="79"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h6j-Xx-968">
@@ -1095,7 +976,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STb-iR-rd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5442" y="63"/>
+            <point key="canvasLocation" x="4396" y="82"/>
         </scene>
     </scenes>
     <resources>
@@ -1110,7 +991,4 @@
         <image name="linkiconbmo" width="285" height="209"/>
         <image name="no-smoking-icon-1" width="884" height="883"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="0ln-DY-3JZ"/>
-    </inferredMetricsTieBreakers>
 </document>
