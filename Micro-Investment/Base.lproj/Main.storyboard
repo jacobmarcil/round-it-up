@@ -711,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOR-gr-wuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="59"/>
+            <point key="canvasLocation" x="2156" y="58.920539730134934"/>
         </scene>
         <!--Home PageVC-->
         <scene sceneID="2dz-RR-xHK">
@@ -977,6 +977,18 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STb-iR-rd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4396" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oqd-pb-qKX">
+            <objects>
+                <navigationController id="LJE-tn-bb0" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g79-m4-2fa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbV-gL-IbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
