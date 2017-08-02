@@ -40,7 +40,10 @@ class AddBankAccountVC: UIViewController {
         otherBtn.layer.borderColor = UIColor.white.cgColor
 
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+
     
 
 }

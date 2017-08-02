@@ -82,7 +82,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                     //Goes to the Setup page which lets the user take a photo for their profile picture and also chose a username
                     
                     let vc = self.storyboard?.instantiateViewController(withIdentifier: "bankAccount")
-                    self.present(vc!, animated: true, completion: nil)
+                    self.navigationController?.pushViewController(vc!, animated: true)
                     self.addUsersInfo()
                     
                 } else {

@@ -14,7 +14,7 @@ class CardScanningVC: UIViewController, CardIOPaymentViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.isHidden = false
         CardIOUtilities.preload()
         startScan()
         cardIOView.allowFreelyRotatingCardGuide = true
