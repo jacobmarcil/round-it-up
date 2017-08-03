@@ -16,10 +16,9 @@ class HomePageVC: UIViewController {
     
     var ref:DatabaseReference!
     var refHandle: UInt!
-    @IBOutlet weak var nom: UILabel!
-    @IBOutlet weak var lastName: UILabel!
-    @IBOutlet weak var email: UILabel!
-    @IBOutlet weak var birthDate: UILabel!
+    
+    @IBOutlet weak var montantTotalInvesti: UILabel!
+    @IBOutlet weak var montantAujourdhui: UILabel!
     
     var user: User!
     
@@ -35,10 +34,8 @@ class HomePageVC: UIViewController {
             
             let value = snapshot.value as? NSDictionary
             
-            self.email.text = value?["email"] as? String ?? ""
-            self.nom.text = value?["prenom"] as? String ?? ""
-            self.birthDate.text = value?["datedenaissance"] as? String ?? ""
-            self.lastName.text = value?["nom"] as? String ?? ""
+           // self.email.text = value?["email"] as? String ?? ""
+
             
         }) { (error) in
             print(error.localizedDescription)

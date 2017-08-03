@@ -22,6 +22,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var dateTextField: UITextField!
     var refUsers: DatabaseReference!
     var refBanque: DatabaseReference!
+    let uid = Auth.auth().currentUser?.uid
+    var montantInvestiTotal: Double = 0.0
+    var montantInvestiTotalShow: String = "0.0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,7 +109,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     
     func addUsersInfo(){
 
-        let uid = Auth.auth().currentUser?.uid
+        
         //creating artist with the given values
         let users = [
                       "prenom": firstNameTB.text! as String,
@@ -125,7 +128,6 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
 
     func addUsersInfoBanqueTest(){
         let uid = Auth.auth().currentUser?.uid
-        
         let unecarte = [
             "numero" : "4540 1100 3984 9285" as String,
             "dateExp": "12/19" as String,
@@ -168,6 +170,27 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
 
     }
     
+    func fetchDatabase(){
+        
+        refUsers.child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            let value = snapshot.value as? NSDictionary
+            
+            self.montantInvestiTotalShow = value?["montantTotalInvesti"] as? String ?? ""
+            
+            
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func montantInvesti(montant: String){
+        fetchDatabase()
+        montantInvestiTotal = Double(montantInvestiTotal) + Double(montant)!
+        refUsers.child(uid!).child("montantTotalInvesti").setValue(montantInvestiTotal)
+        
+    }
+    
     func newTransaction() -> [String: String]{
         
         let montant = Double(arc4random_uniform(30001))/100.0
@@ -192,6 +215,8 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
             "montant": String(montant),
             "roundUp": String(roundUp)
         ]
+        montantInvesti(montant: roundUp)
+        
         return transactionUn as! [String : String]
     
     }

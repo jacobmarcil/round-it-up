@@ -1135,6 +1135,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="montantAujourdhui" destination="HSP-NX-psp" id="5li-wq-7Ll"/>
+                        <outlet property="montantTotalInvesti" destination="9SF-dI-uZB" id="MSt-sz-fBh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiM-Rl-VoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
