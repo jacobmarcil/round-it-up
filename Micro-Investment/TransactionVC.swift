@@ -24,6 +24,7 @@ class TransactionVC: UIViewController, UITableViewDataSource {
         refBanque = Database.database().reference().child("banque");
         numberOfCards()
         transactionTableView.dataSource = self
+        transactionTableView.reloadData()
     }
     
     func numberOfCards(){
@@ -38,26 +39,28 @@ class TransactionVC: UIViewController, UITableViewDataSource {
                 print(error.localizedDescription)
             }
         }
+        transactionTableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.listeTransactions.count
+        return 33//self.listeTransactions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        if let transactionCell = self.transactionTableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath) as? TransactionTableViewCell{
-            
-            for transaction in self.listeTransactions{
-                
-                transactionCell.configureCell(date: transaction["date"]!, description: transaction["description"]!, montant: transaction["montant"]!)
+
+        let cell = self.transactionTableView.dequeueReusableCell(withIdentifier: "transactionCell", for: indexPath) as? TransactionTableViewCell
+        var i: Int = 0
+        for tr in self.listeTransactions{
+            if indexPath.row == i {
+                cell?.montant.text = tr["montant"]
+                cell?.date.text = tr["date"]
+                cell?.descriptionTransaction.text = tr["description"]
             }
-        
-            return transactionCell
+            i += 1
         }
-        else{
-            return UITableViewCell()
+            return cell!
         }
+    
     }
     
-}
+

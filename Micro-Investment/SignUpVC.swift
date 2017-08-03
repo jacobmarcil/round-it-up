@@ -145,11 +145,22 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         ]
         
  
-        refBanque.child(uid!).child("0").setValue(unecarte)
+        refBanque.child(uid!).child("0").setValue(deuxiemecarte)
+        for i in 0 ..< 10 {
+            
+            refBanque.child(uid!).child("0").child("transactions").child(String(i)).setValue(newTransaction())
+            
+        }
         refBanque.child(uid!).child("1").setValue(deuxiemecarte)
-        for i in 0 ..< 100 {
+        for i in 0 ..< 11 {
             
             refBanque.child(uid!).child("1").child("transactions").child(String(i)).setValue(newTransaction())
+            
+        }
+        refBanque.child(uid!).child("2").setValue(deuxiemecarte)
+        for i in 0 ..< 12 {
+            
+            refBanque.child(uid!).child("2").child("transactions").child(String(i)).setValue(newTransaction())
             
         }
 
