@@ -113,7 +113,9 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                       "nom": lastNameTB.text! as String,
                       "datedenaissance": dateTextField.text! as String,
                       "email":emailTB.text! as String,
-                      "password":passwordTB.text! as String
+                      "password":passwordTB.text! as String,
+                      "montantTotalInvesti": "0",
+                      "montantAujourdhui": "0"
         ]
          refUsers.child(uid!).setValue(users)
 
