@@ -29,6 +29,23 @@
 		A5F294981F3368E100EB2D68 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F294971F3368E100EB2D68 /* TransactionVC.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A5F294B51F33BEF700EB2D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		A5F294B71F33BEF700EB2D68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		16021E971F0327610016DACB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		162F9D161F0C68BB00C430B3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -53,6 +70,7 @@
 		A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioVC.swift; sourceTree = "<group>"; };
 		A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		A5F294971F3368E100EB2D68 /* TransactionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
+		A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.debug.xcconfig"; sourceTree = "<group>"; };
 		E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +98,7 @@
 		A58EFFD01EF0216400A98460 = {
 			isa = PBXGroup;
 			children = (
+				A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */,
 				A58EFFDB1EF0216400A98460 /* Micro-Investment */,
 				A58EFFDA1EF0216400A98460 /* Products */,
 				E4F6184CDDA34A75C1830611 /* Pods */,
@@ -121,6 +140,15 @@
 				A5F294971F3368E100EB2D68 /* TransactionVC.swift */,
 			);
 			path = "Micro-Investment";
+			sourceTree = "<group>";
+		};
+		A5F294B11F33BEF700EB2D68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5F294B61F33BEF700EB2D68 /* Charts.framework */,
+				A5F294B81F33BEF700EB2D68 /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E4F6184CDDA34A75C1830611 /* Pods */ = {
@@ -184,12 +212,35 @@
 			mainGroup = A58EFFD01EF0216400A98460;
 			productRefGroup = A58EFFDA1EF0216400A98460 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A5F294B11F33BEF700EB2D68 /* Products */;
+					ProjectRef = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A58EFFD81EF0216400A98460 /* Micro-Investment */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A5F294B61F33BEF700EB2D68 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = A5F294B51F33BEF700EB2D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A5F294B81F33BEF700EB2D68 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = A5F294B71F33BEF700EB2D68 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A58EFFD71EF0216400A98460 /* Resources */ = {
