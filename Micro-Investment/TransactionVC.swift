@@ -55,6 +55,7 @@ class TransactionVC: UIViewController, UITableViewDataSource {
                 cell?.montant.text = tr["montant"]
                 cell?.date.text = tr["date"]
                 cell?.descriptionTransaction.text = tr["description"]
+                return cell!
             }
             i += 1
         }
