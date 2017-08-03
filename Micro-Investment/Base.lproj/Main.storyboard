@@ -831,7 +831,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="transactionTableView" destination="617-fy-SJb" id="2Ok-AM-sR9"/>
+                        <outlet property="transactionTableView" destination="617-fy-SJb" id="CDf-oH-w5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bj-Z3-iVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1136,18 +1136,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiM-Rl-VoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5183.1999999999998" y="78.710644677661179"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oqd-pb-qKX">
-            <objects>
-                <navigationController id="LJE-tn-bb0" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g79-m4-2fa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kbV-gL-IbO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>
