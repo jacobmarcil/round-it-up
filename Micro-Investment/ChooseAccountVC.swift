@@ -24,6 +24,9 @@ class ChooseAccountVC: UIViewController, CardIOPaymentViewControllerDelegate {
     @IBOutlet weak var cardTyp: UILabel!
     @IBOutlet weak var cardNumber: UILabel!
     
+    @IBOutlet weak var cardNumberDebit: UILabel!
+    @IBOutlet weak var debitBtn: UIButton!
+    
     static func prepareController(originController: UIViewController) -> ChooseAccountVC? {
     
         if let chooseAccountVC = originController.storyboard?.instantiateViewController(withIdentifier: "ChooseAccountVC") as? ChooseAccountVC{

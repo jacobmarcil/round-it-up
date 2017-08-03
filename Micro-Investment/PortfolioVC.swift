@@ -24,6 +24,7 @@ class PortfolioVC: UIViewController {
         super.viewDidLoad()
         
         graphImg.layer.borderWidth = 0
+        graphImg.layer.borderColor = view.backgroundColor?.cgColor
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right

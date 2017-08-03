@@ -25,6 +25,8 @@
 		A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */; };
 		A5C159E31F3173680086B342 /* HabitudeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C159E21F3173680086B342 /* HabitudeVC.swift */; };
 		A5F294941F3226AD00EB2D68 /* PortfolioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */; };
+		A5F294961F3364AC00EB2D68 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */; };
+		A5F294981F3368E100EB2D68 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F294971F3368E100EB2D68 /* TransactionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseAccountVC.swift; sourceTree = "<group>"; };
 		A5C159E21F3173680086B342 /* HabitudeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HabitudeVC.swift; sourceTree = "<group>"; };
 		A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioVC.swift; sourceTree = "<group>"; };
+		A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		A5F294971F3368E100EB2D68 /* TransactionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
 		C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.debug.xcconfig"; sourceTree = "<group>"; };
 		E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,6 +102,7 @@
 				A58EFFDE1EF0216400A98460 /* ViewController.swift */,
 				A58EFFE01EF0216400A98460 /* Main.storyboard */,
 				A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */,
+				A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */,
 				A58EFFE31EF0216400A98460 /* Assets.xcassets */,
 				A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */,
 				A58EFFE81EF0216400A98460 /* Info.plist */,
@@ -113,6 +118,7 @@
 				162F9D161F0C68BB00C430B3 /* User.swift */,
 				162F9D181F0C87BE00C430B3 /* AuthService.swift */,
 				A5C159E21F3173680086B342 /* HabitudeVC.swift */,
+				A5F294971F3368E100EB2D68 /* TransactionVC.swift */,
 			);
 			path = "Micro-Investment";
 			sourceTree = "<group>";
@@ -161,7 +167,7 @@
 				TargetAttributes = {
 					A58EFFD81EF0216400A98460 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = FK57D9LEBC;
+						DevelopmentTeam = LQ9MWQYY73;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -255,11 +261,13 @@
 				A5057A321EF0653E00F8B8D3 /* HomePageVC.swift in Sources */,
 				A5057A301EF0653100F8B8D3 /* SignUpVC.swift in Sources */,
 				A55DB45C1EF323FE007576F2 /* CheckboxButton.swift in Sources */,
+				A5F294981F3368E100EB2D68 /* TransactionVC.swift in Sources */,
 				A58EFFDF1EF0216400A98460 /* ViewController.swift in Sources */,
 				A58EFFDD1EF0216400A98460 /* AppDelegate.swift in Sources */,
 				162F9D191F0C87BE00C430B3 /* AuthService.swift in Sources */,
 				A56E3BC51EF1A89C002E0D92 /* AddBankAccountVC.swift in Sources */,
 				A5BACBD81EF327B100E09E93 /* ChooseAccountVC.swift in Sources */,
+				A5F294961F3364AC00EB2D68 /* TransactionTableViewCell.swift in Sources */,
 				A58EFFF11EF062CC00A98460 /* LogInVC.swift in Sources */,
 				162F9D171F0C68BB00C430B3 /* User.swift in Sources */,
 				A5F294941F3226AD00EB2D68 /* PortfolioVC.swift in Sources */,
@@ -387,10 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = FK57D9LEBC;
+				DEVELOPMENT_TEAM = LQ9MWQYY73;
 				INFOPLIST_FILE = "Micro-Investment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasdadsd;
+				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -404,10 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = FK57D9LEBC;
+				DEVELOPMENT_TEAM = LQ9MWQYY73;
 				INFOPLIST_FILE = "Micro-Investment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUasdadsd;
+				PRODUCT_BUNDLE_IDENTIFIER = PFE.RIUva;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Micro-Investment/Micro-Investment-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
