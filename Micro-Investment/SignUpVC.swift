@@ -161,6 +161,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         var dateJour = Int(arc4random_uniform(30))
         var dateMois = Int(arc4random_uniform(12))
         
+        let aFloat: Float = Float(1-montant.truncatingRemainder(dividingBy: 1))
+        
+        let roundUp: String = String(format: "%.2f", aFloat) // "1.0"
+        
         if (dateJour == 0) {
             dateJour = 1
         }
@@ -172,9 +176,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let transactionUn = [
             "date": date,
             "description": "Café Oui Mais Non",
-            "montant": String(montant)
+            "montant": String(montant),
+            "roundUp": String(roundUp)
         ]
-        return transactionUn
+        return transactionUn as! [String : String]
     
     }
     
