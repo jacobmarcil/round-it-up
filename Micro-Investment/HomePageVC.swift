@@ -22,6 +22,7 @@ class HomePageVC: UIViewController {
     @IBOutlet weak var montantAujourdhui: UILabel!
     
     @IBOutlet weak var graphView: BarChartView!
+    @IBOutlet weak var montantTotal: UILabel!
     
     var user: User!
     
@@ -43,7 +44,7 @@ class HomePageVC: UIViewController {
         graphView.drawBordersEnabled = false
         
         graphView.chartDescription?.text = ""
-        
+    
         updateChart()
     }
     
@@ -54,8 +55,8 @@ class HomePageVC: UIViewController {
             
             let value = snapshot.value as? NSDictionary
             
-           // self.email.text = value?["email"] as? String ?? ""
-
+            //self.montantTotal.text = value?["email"] as? String ?? ""
+            self.montantTotal.text = value?["montantTotalInvesti"] as? String ?? "15.39"
             
         }) { (error) in
             print(error.localizedDescription)

@@ -16,9 +16,11 @@
         <scene sceneID="CYT-9G-Y2R">
             <objects>
                 <navigationController id="chy-WE-SRi" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HBn-6O-wQS">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" misplaced="YES" backIndicatorImage="backarrow" backIndicatorTransitionMaskImage="backarrow" id="HBn-6O-wQS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rUR-Xg-1AR"/>
@@ -26,7 +28,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tua-bv-Gxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1332" y="59"/>
+            <point key="canvasLocation" x="-1018" y="59"/>
         </scene>
         <!--Log InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -200,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-271.19999999999999" y="58.920539730134934"/>
+            <point key="canvasLocation" x="-228" y="59"/>
         </scene>
         <!--Sign UpVC-->
         <scene sceneID="MaI-Pp-BmC">
@@ -502,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cs9-Vd-RSw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="59"/>
+            <point key="canvasLocation" x="1289" y="59"/>
         </scene>
         <!--HabitudeVC-->
         <scene sceneID="i1k-sL-vOP">
@@ -516,15 +518,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Désirez-vous changer des habitudes de vies quotidienne suivante?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vS8-Eg-esV">
-                                <rect key="frame" x="16" y="28" width="343" height="142"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yW6-ql-DGt">
-                                <rect key="frame" x="16" y="578" width="343" height="36"/>
+                                <rect key="frame" x="16" y="590" width="343" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="Prochaine étape">
@@ -534,86 +529,86 @@
                                     <segue destination="IaV-gF-Xxg" kind="show" id="CGX-jQ-AEv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrêter de fumer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHu-VT-df3">
-                                <rect key="frame" x="31" y="295" width="141" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-pp-quk">
-                                <rect key="frame" x="30" y="293" width="141" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="smokeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="f9E-TO-oKh"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-smoking-icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="91K-IJ-vvK">
-                                <rect key="frame" x="41" y="295" width="119" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins de café" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG6-hh-vQF">
-                                <rect key="frame" x="202" y="295" width="141" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syK-NU-Z2e">
-                                <rect key="frame" x="202" y="293" width="141" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="coffeeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="rhN-rl-2mA"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee-Cup-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Axg-j5-DjA">
-                                <rect key="frame" x="237" y="319" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ1-CM-Ej1">
-                                <rect key="frame" x="32" y="424" width="141" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-I4-Oi1">
-                                <rect key="frame" x="31" y="422" width="141" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="foodChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="kDA-Fn-jem"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastFoodWhite" translatesAutoresizingMaskIntoConstraints="NO" id="lrK-ng-4x7">
-                                <rect key="frame" x="65" y="448" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins d'alcool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-In-Ic1">
-                                <rect key="frame" x="203" y="424" width="141" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-AZ-2Hl">
-                                <rect key="frame" x="203" y="422" width="141" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="alcoolChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="K4a-fc-Dlj"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alcoolWhite-1" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-Ht-Zf6">
-                                <rect key="frame" x="238" y="448" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkW-fD-HNf">
-                                <rect key="frame" x="16" y="164" width="343" height="123"/>
+                                <rect key="frame" x="16" y="70" width="343" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">En sélectionnant une des habitudes de vies ci-dessous, Round It Up pourra vous aidez à changer vos habitudes de vie afin d'atteindre votre objectif. </string>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arrêter de fumer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHu-VT-df3">
+                                <rect key="frame" x="25" y="234" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvl-pp-quk">
+                                <rect key="frame" x="24" y="232" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="smokeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="f9E-TO-oKh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="no-smoking-icon-1" translatesAutoresizingMaskIntoConstraints="NO" id="91K-IJ-vvK">
+                                <rect key="frame" x="35" y="234" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins de café" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG6-hh-vQF">
+                                <rect key="frame" x="196" y="234" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syK-NU-Z2e">
+                                <rect key="frame" x="196" y="232" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="coffeeChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="rhN-rl-2mA"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Coffee-Cup-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Axg-j5-DjA">
+                                <rect key="frame" x="231" y="258" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fast Food" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ1-CM-Ej1">
+                                <rect key="frame" x="26" y="363" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpL-I4-Oi1">
+                                <rect key="frame" x="25" y="361" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="foodChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="kDA-Fn-jem"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fastFoodWhite" translatesAutoresizingMaskIntoConstraints="NO" id="lrK-ng-4x7">
+                                <rect key="frame" x="59" y="387" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Moins d'alcool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYJ-In-Ic1">
+                                <rect key="frame" x="197" y="363" width="141" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sf7-AZ-2Hl">
+                                <rect key="frame" x="197" y="361" width="141" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="alcoolChosen:" destination="irm-oi-6pU" eventType="touchUpInside" id="K4a-fc-Dlj"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="alcoolWhite-1" translatesAutoresizingMaskIntoConstraints="NO" id="TZC-Ht-Zf6">
+                                <rect key="frame" x="232" y="387" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -624,13 +619,14 @@
                         <outlet property="coffeeLbl" destination="CG6-hh-vQF" id="0TW-Vb-gOy"/>
                         <outlet property="foodBtn" destination="fpL-I4-Oi1" id="Nfk-2G-Bjg"/>
                         <outlet property="foodLbl" destination="NJ1-CM-Ej1" id="QNo-f2-2tS"/>
+                        <outlet property="nextBtn" destination="yW6-ql-DGt" id="aC2-Ve-AXt"/>
                         <outlet property="smokeBtn" destination="Bvl-pp-quk" id="Fk4-i8-9r0"/>
                         <outlet property="smokeLbl" destination="BHu-VT-df3" id="RPQ-dz-hRX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kDh-He-bQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2873" y="-568"/>
+            <point key="canvasLocation" x="2778" y="54"/>
         </scene>
         <!--Choose AccountVC-->
         <scene sceneID="CBT-FM-j1E">
@@ -710,65 +706,24 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K69-Av-nfa">
-                                <rect key="frame" x="16" y="349" width="343" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JIB-oD-1Eg" customClass="CheckboxButton" customModule="Micro_Investment" customModuleProvider="target">
-                                <rect key="frame" x="27" y="349" width="44" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="checkColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="containerColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="circular" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="containerFillsOnToggleOn" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0000 0000 0000 0000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0D-jy-JUC">
-                                <rect key="frame" x="184" y="371" width="155" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desjardins - " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fj-lF-LRC">
-                                <rect key="frame" x="79" y="342" width="136" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Compte débit" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wk-Ut-w5i">
-                                <rect key="frame" x="223" y="349" width="141" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="btnDebit" destination="TxS-dF-VU6" id="zu4-Qv-7bs"/>
                         <outlet property="cardNumber" destination="NJF-wH-hMb" id="svh-jI-4nc"/>
-                        <outlet property="cardNumberDebit" destination="c0D-jy-JUC" id="tP0-zs-uJt"/>
                         <outlet property="cardTyp" destination="ZFs-JZ-Vy8" id="HWi-2Z-P3C"/>
-                        <outlet property="debitBtn" destination="K69-Av-nfa" id="tC7-gZ-POu"/>
+                        <outlet property="nextBtn" destination="spH-j5-QU8" id="zGm-pW-bXe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOR-gr-wuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2156" y="58.920539730134934"/>
+            <point key="canvasLocation" x="2033" y="59"/>
         </scene>
         <!--TransactionVC-->
         <scene sceneID="2dz-RR-xHK">
             <objects>
-                <viewController storyboardIdentifier="Home" id="5Im-Yx-lPg" customClass="TransactionVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Im-Yx-lPg" customClass="TransactionVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SAu-sO-d4Y"/>
                         <viewControllerLayoutGuide type="bottom" id="AIs-EO-tBy"/>
@@ -778,7 +733,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="617-fy-SJb">
-                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -830,6 +785,14 @@
                                     <outlet property="dataSource" destination="5Im-Yx-lPg" id="N2g-1c-pyi"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd8-pa-mjA">
+                                <rect key="frame" x="13" y="6" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="qhK-oM-2g8" kind="show" id="v4W-c9-n7P"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -839,7 +802,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bj-Z3-iVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="731"/>
+            <point key="canvasLocation" x="1242" y="752"/>
         </scene>
         <!--PortfolioVC-->
         <scene sceneID="Xde-Vz-kvB">
@@ -857,29 +820,22 @@
                                 <rect key="frame" x="16" y="611" width="343" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="Commencer à investir!">
+                                <state key="normal" title="Prochaine étape">
                                     <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="zKk-1D-CVe" kind="show" id="A6z-aQ-E9b"/>
+                                    <segue destination="Saq-Fe-Ynn" kind="show" id="zeb-Sc-E8o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Veuillez choisir le portfolio d'investissement qui vous correspond le mieux." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6x-c8-sL2">
-                                <rect key="frame" x="16" y="28" width="343" height="102"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choisir un portfolio dans lequel investir." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="547-DS-IBS">
+                                <rect key="frame" x="16" y="60" width="343" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portfolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-9s-lRW">
-                                <rect key="frame" x="16" y="138" width="343" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tWB-HJ-NcX">
-                                <rect key="frame" x="16" y="420" width="343" height="183"/>
+                                <rect key="frame" x="16" y="400" width="343" height="183"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Large Co. Stocks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D58-aM-Lut">
@@ -990,8 +946,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Portfolio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-9s-lRW">
+                                <rect key="frame" x="16" y="116" width="343" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="conservateur-1" translatesAutoresizingMaskIntoConstraints="NO" id="G2b-uH-1Xn">
-                                <rect key="frame" x="16" y="194" width="343" height="226"/>
+                                <rect key="frame" x="16" y="172" width="343" height="226"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -999,7 +962,7 @@
                                 </connections>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="uFF-Hq-ph1">
-                                <rect key="frame" x="79" y="158" width="216" height="37"/>
+                                <rect key="frame" x="78" y="136" width="216" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
                         </subviews>
@@ -1007,6 +970,7 @@
                     </view>
                     <connections>
                         <outlet property="graphImg" destination="G2b-uH-1Xn" id="o9r-Z1-3hU"/>
+                        <outlet property="nextBtn" destination="KBa-C0-KdS" id="BFC-Yb-rwA"/>
                         <outlet property="pageControl" destination="uFF-Hq-ph1" id="sDF-rD-DVB"/>
                         <outlet property="per1" destination="qtk-k0-ocR" id="rM3-RH-53U"/>
                         <outlet property="per2" destination="C9B-PE-q2l" id="xIa-tp-s2v"/>
@@ -1023,12 +987,60 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="3612" y="78.710644677661179"/>
+            <point key="canvasLocation" x="3488.8000000000002" y="58.920539730134934"/>
         </scene>
-        <!--View Controller-->
+        <!--Invest ConfigVC-->
+        <scene sceneID="FtL-jb-uft">
+            <objects>
+                <viewController id="Saq-Fe-Ynn" customClass="InvestConfigVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wUg-zc-9Lz"/>
+                        <viewControllerLayoutGuide type="bottom" id="uLb-i7-WRO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4M6-ze-BvW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV0-4m-LlF">
+                                <rect key="frame" x="16" y="611" width="343" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Commencer à investir!">
+                                    <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="zKk-1D-CVe" kind="show" id="lkF-XY-ZgC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Modalité d'investissement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGx-FD-Xg4">
+                                <rect key="frame" x="16" y="77" width="343" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Large Co. Stocks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txz-x4-Nfm">
+                                <rect key="frame" x="146" y="276" width="213" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="eV0-4m-LlF" id="b29-YF-Jdo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcX-rm-PHx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4256.8000000000002" y="53.523238380809602"/>
+        </scene>
+        <!--LoadingVC-->
         <scene sceneID="h6j-Xx-968">
             <objects>
-                <viewController id="zKk-1D-CVe" sceneMemberID="viewController">
+                <viewController id="zKk-1D-CVe" customClass="LoadingVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T2L-NR-vC7"/>
                         <viewControllerLayoutGuide type="bottom" id="qed-m8-Fit"/>
@@ -1037,25 +1049,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenue!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYK-hY-7Cu">
-                                <rect key="frame" x="16" y="138" width="343" height="53"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bienvenue à Round It Up!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRZ-Dz-ASx">
+                                <rect key="frame" x="22" y="235" width="330" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                                 <color key="textColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo (5)" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-AE-0RS">
+                                <rect key="frame" x="121" y="111" width="132" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="NXJ-cX-pa2">
+                                <rect key="frame" x="177" y="347" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="loading" destination="NXJ-cX-pa2" id="sn5-WR-uKi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STb-iR-rd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4396" y="82"/>
+            <point key="canvasLocation" x="5033" y="54"/>
         </scene>
         <!--Home PageVC-->
         <scene sceneID="dW0-NA-Uhv">
             <objects>
-                <viewController id="qhK-oM-2g8" customClass="HomePageVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Home" id="qhK-oM-2g8" customClass="HomePageVC" customModule="Micro_Investment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oif-Jy-v5O"/>
                         <viewControllerLayoutGuide type="bottom" id="nEa-lV-af2"/>
@@ -1064,86 +1087,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QiF-dI-NvN" customClass="BarChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="356"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Montant total investi en date d'aujourd'hui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcO-IG-Ce0">
-                                <rect key="frame" x="16" y="398" width="343" height="21"/>
+                                <rect key="frame" x="16" y="440" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Montant investi aujourd'hui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YbV-f0-VPL">
-                                <rect key="frame" x="16" y="477" width="343" height="21"/>
+                                <rect key="frame" x="16" y="519" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SF-dI-uZB">
-                                <rect key="frame" x="155" y="427" width="50" height="21"/>
+                                <rect key="frame" x="155" y="469" width="50" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyQ-Jb-1ZJ">
-                                <rect key="frame" x="209" y="427" width="11" height="21"/>
+                                <rect key="frame" x="209" y="469" width="11" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-NX-psp">
-                                <rect key="frame" x="155" y="506" width="50" height="21"/>
+                                <rect key="frame" x="155" y="548" width="50" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Itt-ac-dlf">
-                                <rect key="frame" x="209" y="506" width="11" height="21"/>
+                                <rect key="frame" x="209" y="548" width="11" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Montant investi dans les derniers 30 jours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id9-zv-Z4k">
-                                <rect key="frame" x="16" y="567" width="343" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QiF-dI-NvN" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="106" width="375" height="315"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPi-A4-tdU">
-                                <rect key="frame" x="155" y="596" width="50" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-us-o7W">
+                                <rect key="frame" x="16" y="595" width="343" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IC-hS-at3">
-                                <rect key="frame" x="209" y="596" width="11" height="21"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Voir mes transactions">
+                                    <color key="titleColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="5mX-b0-r8Z" eventType="touchUpInside" id="6eP-CL-QXg"/>
+                                    <segue destination="5Im-Yx-lPg" kind="show" id="3MS-TE-1zc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bonjour!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEF-oX-Yk2">
+                                <rect key="frame" x="22" y="42" width="330" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" red="0.98420697450000005" green="0.98437517880000003" blue="0.98419648410000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.3038154542" green="0.91462433340000004" blue="0.69336622950000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="graphView" destination="QiF-dI-NvN" id="wbt-19-cR8"/>
                         <outlet property="montantAujourdhui" destination="HSP-NX-psp" id="5li-wq-7Ll"/>
+                        <outlet property="montantTotal" destination="9SF-dI-uZB" id="Kgo-eO-MD9"/>
                         <outlet property="montantTotalInvesti" destination="9SF-dI-uZB" id="MSt-sz-fBh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IiM-Rl-VoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5183.1999999999998" y="78.710644677661179"/>
+            <point key="canvasLocation" x="542" y="752"/>
         </scene>
     </scenes>
     <resources>
@@ -1152,6 +1174,7 @@
         <image name="Scotiabank-Logo-PNG-03791-2" width="625" height="627"/>
         <image name="TD-Bank-Group-1" width="500" height="300"/>
         <image name="alcoolWhite-1" width="512" height="512"/>
+        <image name="backarrow" width="10" height="18"/>
         <image name="conservateur-1" width="1773" height="1204"/>
         <image name="desjardins-1" width="61" height="61"/>
         <image name="fastFoodWhite" width="200" height="200"/>

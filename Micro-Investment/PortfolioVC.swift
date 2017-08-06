@@ -19,12 +19,16 @@ class PortfolioVC: UIViewController {
     @IBOutlet weak var per3: UILabel!
     @IBOutlet weak var per4: UILabel!
     @IBOutlet weak var per5: UILabel!
+    @IBOutlet weak var nextBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         graphImg.layer.borderWidth = 0
         graphImg.layer.borderColor = view.backgroundColor?.cgColor
+        
+        navigationItem.title = "Portfolio"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGesture))
         swipeRight.direction = UISwipeGestureRecognizerDirection.right
@@ -36,6 +40,10 @@ class PortfolioVC: UIViewController {
         
         pageControl.currentPage = 0
         typeOfPortfolioLbl.text = "Conservateur"
+        
+        nextBtn.layer.cornerRadius = 5
+        nextBtn.layer.borderWidth = 1
+        nextBtn.layer.borderColor = UIColor.white.cgColor
         
         
     }

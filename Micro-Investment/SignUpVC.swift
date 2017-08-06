@@ -34,6 +34,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         nextStepBtn.layer.cornerRadius = 5
         nextStepBtn.layer.borderWidth = 1
         nextStepBtn.layer.borderColor = UIColor.white.cgColor
+        
         //Looks for single or multiple taps.
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignUpVC.dismissKeyboard))
         
@@ -46,11 +47,13 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         self.emailTB.delegate = self;
         self.passwordTB.delegate = self;
         
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.white]
+        navigationController?.navigationBar.barTintColor = view.backgroundColor
+        navigationController?.navigationBar.titleTextAttributes = titleDict as? [String : Any]
+        
         navigationItem.title = "Round It Up!"
         
-        navigationController?.navigationBar.barTintColor = view.backgroundColor
-        navigationController?.navigationBar.tintColor = UIColor.white
-        
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

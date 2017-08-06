@@ -13,8 +13,12 @@
 		7019BAA0FD8BEE16A95B7C97 /* Pods_Micro_Investment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C8B9BD20489615703ADF70 /* Pods_Micro_Investment.framework */; };
 		A5057A301EF0653100F8B8D3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */; };
 		A5057A321EF0653E00F8B8D3 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */; };
+		A519B3181F33C44400B40A97 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A519B3171F33C44400B40A97 /* Charts.framework */; };
+		A519B3191F33C44400B40A97 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A519B3171F33C44400B40A97 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A530B6251EF1BF2600FE0C35 /* CardScanningVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */; };
+		A53DC5401F3785F600096D07 /* InvestConfigVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53DC53F1F3785F600096D07 /* InvestConfigVC.swift */; };
 		A55DB45C1EF323FE007576F2 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */; };
+		A56AA0951F36C9B1001840E3 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56AA0941F36C9B1001840E3 /* LoadingVC.swift */; };
 		A56E3BC51EF1A89C002E0D92 /* AddBankAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */; };
 		A58EFFDD1EF0216400A98460 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFDC1EF0216400A98460 /* AppDelegate.swift */; };
 		A58EFFDF1EF0216400A98460 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58EFFDE1EF0216400A98460 /* ViewController.swift */; };
@@ -29,22 +33,19 @@
 		A5F294981F3368E100EB2D68 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F294971F3368E100EB2D68 /* TransactionVC.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A5F294B51F33BEF700EB2D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F241D8110E600722320;
-			remoteInfo = Charts;
+/* Begin PBXCopyFilesBuildPhase section */
+		A519B31A1F33C44400B40A97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A519B3191F33C44400B40A97 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5F294B71F33BEF700EB2D68 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 06165F2E1D8110E600722320;
-			remoteInfo = ChartsTests;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		16021E971F0327610016DACB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -53,9 +54,12 @@
 		91C8B9BD20489615703ADF70 /* Pods_Micro_Investment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Micro_Investment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		A519B3171F33C44400B40A97 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardScanningVC.swift; sourceTree = "<group>"; };
 		A530B6271EF1C09700FE0C35 /* Micro-Investment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Micro-Investment-Bridging-Header.h"; sourceTree = "<group>"; };
+		A53DC53F1F3785F600096D07 /* InvestConfigVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InvestConfigVC.swift; sourceTree = "<group>"; };
 		A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		A56AA0941F36C9B1001840E3 /* LoadingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBankAccountVC.swift; sourceTree = "<group>"; };
 		A58EFFD91EF0216400A98460 /* Micro-Investment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Micro-Investment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58EFFDC1EF0216400A98460 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +74,6 @@
 		A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioVC.swift; sourceTree = "<group>"; };
 		A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
 		A5F294971F3368E100EB2D68 /* TransactionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
-		A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		C6826C4F8B749D996F1A0432 /* Pods-Micro-Investment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.debug.xcconfig"; sourceTree = "<group>"; };
 		E4BF08717F0D98B07BF521F5 /* Pods-Micro-Investment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Micro-Investment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Micro-Investment/Pods-Micro-Investment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7019BAA0FD8BEE16A95B7C97 /* Pods_Micro_Investment.framework in Frameworks */,
+				A519B3181F33C44400B40A97 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +102,7 @@
 		A58EFFD01EF0216400A98460 = {
 			isa = PBXGroup;
 			children = (
-				A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */,
+				A519B3171F33C44400B40A97 /* Charts.framework */,
 				A58EFFDB1EF0216400A98460 /* Micro-Investment */,
 				A58EFFDA1EF0216400A98460 /* Products */,
 				E4F6184CDDA34A75C1830611 /* Pods */,
@@ -118,37 +122,30 @@
 			isa = PBXGroup;
 			children = (
 				A58EFFDC1EF0216400A98460 /* AppDelegate.swift */,
-				A58EFFDE1EF0216400A98460 /* ViewController.swift */,
 				A58EFFE01EF0216400A98460 /* Main.storyboard */,
+				A58EFFF01EF062CC00A98460 /* LogInVC.swift */,
+				A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */,
+				A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */,
+				A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */,
+				A5C159E21F3173680086B342 /* HabitudeVC.swift */,
 				A5F294931F3226AD00EB2D68 /* PortfolioVC.swift */,
-				A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */,
+				A53DC53F1F3785F600096D07 /* InvestConfigVC.swift */,
+				A56AA0941F36C9B1001840E3 /* LoadingVC.swift */,
+				A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */,
+				A5F294971F3368E100EB2D68 /* TransactionVC.swift */,
 				A58EFFE31EF0216400A98460 /* Assets.xcassets */,
 				A58EFFE51EF0216400A98460 /* LaunchScreen.storyboard */,
 				A58EFFE81EF0216400A98460 /* Info.plist */,
-				A56E3BC41EF1A89C002E0D92 /* AddBankAccountVC.swift */,
-				A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */,
-				A5BACBD71EF327B100E09E93 /* ChooseAccountVC.swift */,
-				A58EFFF01EF062CC00A98460 /* LogInVC.swift */,
-				A5057A2F1EF0653100F8B8D3 /* SignUpVC.swift */,
-				A5057A311EF0653E00F8B8D3 /* HomePageVC.swift */,
-				A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */,
 				A530B6271EF1C09700FE0C35 /* Micro-Investment-Bridging-Header.h */,
 				16021E971F0327610016DACB /* GoogleService-Info.plist */,
 				162F9D161F0C68BB00C430B3 /* User.swift */,
 				162F9D181F0C87BE00C430B3 /* AuthService.swift */,
-				A5C159E21F3173680086B342 /* HabitudeVC.swift */,
-				A5F294971F3368E100EB2D68 /* TransactionVC.swift */,
+				A530B6241EF1BF2600FE0C35 /* CardScanningVC.swift */,
+				A55DB45B1EF323FE007576F2 /* CheckboxButton.swift */,
+				A5F294951F3364AC00EB2D68 /* TransactionTableViewCell.swift */,
+				A58EFFDE1EF0216400A98460 /* ViewController.swift */,
 			);
 			path = "Micro-Investment";
-			sourceTree = "<group>";
-		};
-		A5F294B11F33BEF700EB2D68 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A5F294B61F33BEF700EB2D68 /* Charts.framework */,
-				A5F294B81F33BEF700EB2D68 /* ChartsTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		E4F6184CDDA34A75C1830611 /* Pods */ = {
@@ -173,6 +170,7 @@
 				A58EFFD71EF0216400A98460 /* Resources */,
 				46A1F2BD6630BB76F2529A3F /* [CP] Embed Pods Frameworks */,
 				F4890C5FE807D04F33A27BBA /* [CP] Copy Pods Resources */,
+				A519B31A1F33C44400B40A97 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -212,35 +210,12 @@
 			mainGroup = A58EFFD01EF0216400A98460;
 			productRefGroup = A58EFFDA1EF0216400A98460 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = A5F294B11F33BEF700EB2D68 /* Products */;
-					ProjectRef = A5F294B01F33BEF700EB2D68 /* Charts.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A58EFFD81EF0216400A98460 /* Micro-Investment */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		A5F294B61F33BEF700EB2D68 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = A5F294B51F33BEF700EB2D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A5F294B81F33BEF700EB2D68 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = A5F294B71F33BEF700EB2D68 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A58EFFD71EF0216400A98460 /* Resources */ = {
@@ -310,8 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5057A321EF0653E00F8B8D3 /* HomePageVC.swift in Sources */,
+				A56AA0951F36C9B1001840E3 /* LoadingVC.swift in Sources */,
 				A5057A301EF0653100F8B8D3 /* SignUpVC.swift in Sources */,
 				A55DB45C1EF323FE007576F2 /* CheckboxButton.swift in Sources */,
+				A53DC5401F3785F600096D07 /* InvestConfigVC.swift in Sources */,
 				A5F294981F3368E100EB2D68 /* TransactionVC.swift in Sources */,
 				A58EFFDF1EF0216400A98460 /* ViewController.swift in Sources */,
 				A58EFFDD1EF0216400A98460 /* AppDelegate.swift in Sources */,

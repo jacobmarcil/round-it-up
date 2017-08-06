@@ -18,6 +18,7 @@ class AddBankAccountVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
         desjardinsBtn.layer.cornerRadius = 5
         desjardinsBtn.layer.borderWidth = 1

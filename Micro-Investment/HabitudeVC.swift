@@ -21,9 +21,13 @@ class HabitudeVC: UIViewController {
     
     @IBOutlet weak var alcoolBtn: UIButton!
     @IBOutlet weak var alcoolLbl: UILabel!
+    @IBOutlet weak var nextBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "Habitudes de vie"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
         smokeBtn.layer.cornerRadius = 5
         smokeBtn.layer.borderWidth = 1
@@ -40,6 +44,10 @@ class HabitudeVC: UIViewController {
         alcoolBtn.layer.cornerRadius = 5
         alcoolBtn.layer.borderWidth = 1
         alcoolBtn.layer.borderColor = UIColor.white.cgColor
+        
+        nextBtn.layer.cornerRadius = 5
+        nextBtn.layer.borderWidth = 1
+        nextBtn.layer.borderColor = UIColor.white.cgColor
 
         
     }

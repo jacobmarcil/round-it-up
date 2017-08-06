@@ -27,6 +27,8 @@ class ChooseAccountVC: UIViewController, CardIOPaymentViewControllerDelegate {
     @IBOutlet weak var cardNumberDebit: UILabel!
     @IBOutlet weak var debitBtn: UIButton!
     
+    @IBOutlet weak var nextBtn: UIButton!
+    
     static func prepareController(originController: UIViewController) -> ChooseAccountVC? {
     
         if let chooseAccountVC = originController.storyboard?.instantiateViewController(withIdentifier: "ChooseAccountVC") as? ChooseAccountVC{
@@ -46,7 +48,12 @@ class ChooseAccountVC: UIViewController, CardIOPaymentViewControllerDelegate {
         btnDebit.layer.borderWidth = 1
         btnDebit.layer.borderColor = UIColor.white.cgColor
         
+        nextBtn.layer.cornerRadius = 5
+        nextBtn.layer.borderWidth = 1
+        nextBtn.layer.borderColor = UIColor.white.cgColor
+        
         self.navigationController?.navigationBar.isHidden = false
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         CardIOUtilities.preload()
         startScan()
     }

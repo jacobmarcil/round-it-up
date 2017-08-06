@@ -32,6 +32,8 @@ class LogInVC: UIViewController, UITextFieldDelegate {
         //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
         //tap.cancelsTouchesInView = false
         
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        
         view.addGestureRecognizer(tap)
         self.emailField.delegate = self;
         self.passwordField.delegate = self;
