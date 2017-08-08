@@ -21,6 +21,7 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nextStepBtn: UIButton!
     @IBOutlet weak var dateTextField: UITextField!
     var refUsers: DatabaseReference!
+    var descriptionLbl: String = ""
     var refBanque: DatabaseReference!
     let uid = Auth.auth().currentUser?.uid
     var montantInvestiTotal: Double = 0.0
@@ -210,11 +211,29 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         if (dateMois == 0) {
             dateMois = 1
         }
+        
+        
+        if(montant < 30){
+            self.descriptionLbl = "Cafe Oui mais Non"
+        } else if(montant < 60){
+            self.descriptionLbl = "Brick"
+        }else if(montant < 90){
+            self.descriptionLbl = "Maison Corbeil"
+        }else if(montant < 150){
+            self.descriptionLbl = "Uniprix"
+        }else if(montant < 200){
+            self.descriptionLbl = "Metro"
+        } else{
+            self.descriptionLbl = "Bureau en gros"
+        }
+        
+        
+        
         let dateAnnee = 2017
         let date = String(dateJour) + "-" + String(dateMois) + "-" + String(dateAnnee)
         let transactionUn = [
             "date": date,
-            "description": "Café Oui Mais Non",
+            "description": self.descriptionLbl,
             "montant": String(montant),
             "roundUp": String(roundUp)
         ]

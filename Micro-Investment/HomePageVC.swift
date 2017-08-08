@@ -17,17 +17,22 @@ class HomePageVC: UIViewController {
     
     var ref:DatabaseReference!
     var refHandle: UInt!
-    
     @IBOutlet weak var montantTotalInvesti: UILabel!
     @IBOutlet weak var montantAujourdhui: UILabel!
     
     @IBOutlet weak var graphView: BarChartView!
     @IBOutlet weak var montantTotal: UILabel!
     
+    var refBanque: DatabaseReference!
+    var listeTransacs: [[String:String]] = []
+    
     var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refBanque = Database.database().reference().child("banque")
+        
         ref = Database.database().reference()
         graphView.leftAxis.drawAxisLineEnabled = false
         graphView.leftAxis.drawGridLinesEnabled = false
@@ -46,6 +51,8 @@ class HomePageVC: UIViewController {
         graphView.chartDescription?.text = ""
     
         updateChart()
+        numberOfCards()
+    
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,7 +62,6 @@ class HomePageVC: UIViewController {
             
             let value = snapshot.value as? NSDictionary
             
-            //self.montantTotal.text = value?["email"] as? String ?? ""
             self.montantTotal.text = value?["montantTotalInvesti"] as? String ?? "15.39"
             
         }) { (error) in
@@ -76,4 +82,26 @@ class HomePageVC: UIViewController {
         graphView.data = chartData
     }
 
+    @IBAction func pushVC(_ sender: Any) {
+        
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "Transaction") as? TransactionVC{
+            vc.listeTransactions = self.listeTransacs
+            self.present(vc, animated: true, completion: nil)
+        }
+
+    }
+    
+    func numberOfCards(){
+        if let userID = Auth.auth().currentUser?.uid{
+            refBanque.child(userID).child("1").child("transactions").observeSingleEvent(of: .value, with: { (snapshot) in
+                
+                for transaction in (snapshot.value as? [[String:String]])! {
+                    self.listeTransacs.append(transaction)
+                }
+                
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+        }
+    }
 }

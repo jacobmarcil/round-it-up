@@ -13,6 +13,8 @@ import FirebaseDatabase
 
 class TransactionVC: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var backBtn: UIButton!
+    
     @IBOutlet weak var transactionTableView: UITableView!
     var refBanque: DatabaseReference!
     var listeTransactions: [[String:String]] = []
@@ -21,25 +23,21 @@ class TransactionVC: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         ref = Database.database().reference()
-        refBanque = Database.database().reference().child("banque");
-        numberOfCards()
+        refBanque = Database.database().reference().child("banque")
+
         transactionTableView.dataSource = self
         transactionTableView.reloadData()
     }
     
-    func numberOfCards(){
-        if let userID = Auth.auth().currentUser?.uid{
-            refBanque.child(userID).child("1").child("transactions").observeSingleEvent(of: .value, with: { (snapshot) in
-                
-                for transaction in (snapshot.value as? [[String:String]])! {
-                    self.listeTransactions.append(transaction)
-                }
-                
-            }) { (error) in
-                print(error.localizedDescription)
-            }
+    static func prepareController(originController: UIViewController, listeTransac: [[String:String]]) -> TransactionVC? {
+        
+        if let transactVC = originController.storyboard?.instantiateViewController(withIdentifier: "TransactionVC") as? TransactionVC{
+            transactVC.listeTransactions = listeTransac
+            return transactVC
         }
-        transactionTableView.reloadData()
+        else{
+            return nil
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
